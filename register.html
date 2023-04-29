@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_register.css">
+    <title> REGISTER</title>
+</head>
+<body>
+    <form action="index.html">
+        <div class="container">
+          <h1>Register</h1>
+
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="Username" id="Username" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+          <button onclick="Register()" class="regibtn">Resgister</button>
+
+          <div class="member">
+              Already a member? <a href="login.html" class="to_login"> Sign In </a>
+          </div>
+        
+    </form>
+
+      <script>
+        function Register() {
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('psw').value;
+
+            if (username == "admin" && password == "admin"){
+              window.alert("Successfully Registered!")
+              window.location.replace("login.html");
+              
+              document.getElementById('username').value = "";
+              document.getElementById('psw').value = "";
+
+            } else {
+              window.alert("Please fill-out the form!")
+            }
+          }
+        </script>
+        
+        <script type="text/javascript" src="path-to-javascript-file.js"></script>
+        </body>
+        </html>
+        

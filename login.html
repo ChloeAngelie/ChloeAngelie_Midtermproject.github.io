@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_login.css">
+    <title> LOGIN </title>
+</head>
+<body>
+    <form action="index.html">
+        <div class="container">
+          <h1>Login</h1>
+
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="Username" id="Username" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+          <button onclick="Login()" class="loginbtn">Login</button>
+
+        <div class="member">
+            Not a member ? <a href="register.html" class="to_register"> Sign Up </a>
+        </div>
+          
+
+</form>
+
+<script>
+        function Login() {
+            let username = document.getElementById('Username').value;
+            let password = document.getElementById('psw').value;
+
+            if (username == "admin" && password == "admin"){
+                window.alert("Successfully Login!")
+                window.location.replace("index.html");
+            
+            } else if (username == "" || password == ""){
+                window.alert("Please Input Credentials!");
+
+            } else if (username != "admin" || password != "admin") {
+                window.alert("Wrong Credentails");
+
+
+            } else {
+                window.alert("No Credentials!");
+            }
+        }
+        </script>
+        
+        <script type="text/javascript" src="path-to-javascript-file.js"></script>
+        </body>
+        </html>
+
+           

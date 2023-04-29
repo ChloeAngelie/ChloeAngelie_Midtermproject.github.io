@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:transparent;
+}
+
+
+.container {
+  padding: 16px;
+  height: 1000px;
+  background-image: url('images_videos/bgimage.jpg');
+  
+  color: rgb(0, 0, 0);
+  font-weight:bold;
+  font-size: 200%;
+  text-align:center;
+  }
+
+  
+  input[type=text], input[type=password] {
+    width: 30%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: .3rem;
+    vertical-align: middle;
+  }
+
+
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: transparent;
+    outline: none;
+  }
+
+  .member{
+    font-weight:medium;
+    font-size: 80%;
+    text-align:center;
+    margin:20px 0 22px 0;
+  }
+  
+
+  .regibtn {
+    background-color: skyblue;
+    color: white;
+    padding: 20px 16px;
+    margin:auto;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    font-size: 1rem;
+    font-weight:medium;
+    opacity: 0.9;
+
+  }
+  
+
+.regibtn:hover {
+  opacity: .5;
+}
+
+/* Add a blue text color to links */
+a {
+  color: rgb(238, 238, 238);
+}
